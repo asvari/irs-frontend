@@ -1,0 +1,213 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-left: 135px;
+  padding-right: 150px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.breadcrumbs{
+  margin-top: 98px;
+  margin-bottom: 88px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.breadcrumbsItem{
+  padding: 12px 26px;
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  background: #EFEFEF;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumbsItem:hover{
+  background: #d9d8d8;
+  cursor: pointer;
+}
+
+.breadcrumbsSeparator{
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 20px;
+}
+
+.searchBlock{
+  display: flex;
+  gap: 25px;
+  height: 80px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.searchButton{
+  appearance: none;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  width: 160px;
+  color: #FFFFFF;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton:disabled {
+  pointer-events: none;
+}
+
+.searchButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.searchButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.addThemeButton{
+  background: #FFFFFF;
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  outline: none;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addThemeButton:hover {
+  text-shadow: 1px 1px 5px;
+}
+
+.addThemeButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.addThemeBlock{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.newThemeInfo{
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  background: rgb(219, 220, 255);
+  gap: 25px;
+  padding: 31px 46px 31px 80px;
+  box-sizing: border-box;
+
+}
+
+.addThemeInput {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.saveThemeButton{
+  appearance: none;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  width: 210px;
+  color: #FFFFFF;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saveThemeButton:disabled {
+  pointer-events: none;
+}
+
+.saveThemeButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.saveThemeButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

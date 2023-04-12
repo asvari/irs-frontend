@@ -1,0 +1,112 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 35px;
+  padding-left: 135px;
+  padding-right: 150px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:
+          linear-gradient(
+                          rgba(148, 241, 254, 0.8),
+                          transparent
+          ),
+          linear-gradient(
+                          -45deg,
+                          rgba(130, 165, 255, 0.8),
+                          transparent
+          ),
+          linear-gradient(
+                          45deg, #CCCEFF,
+                          transparent
+          );
+  background-blend-mode: multiply;
+}
+
+.loginBlock{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 153px;
+}
+
+.fieldBlock{
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.3);
+  height: 543px;
+  width: 543px;
+  border-radius: 30px;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fields{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.loginError{
+  margin-top: 35px;
+  background: rgba(255, 255, 255, 0.3) !important;
+  height: 60px ;
+  position: relative;
+  border-radius: 10px!important;
+  box-shadow: none !important;
+  text-align: center!important;
+  padding-top: 30px;
+  opacity: 0;
+  animation: ani 0.3s forwards;
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.loginButton{
+  height: 60px;
+  appearance: none;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 19px;
+  width: 160px;
+  color: #FFFFFF;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginButton:disabled {
+  pointer-events: none;
+}
+
+.loginButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.loginButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

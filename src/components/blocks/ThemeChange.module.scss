@@ -1,0 +1,75 @@
+.themeChangeBlock{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  background: rgba(219, 220, 255, 0.66);
+  backdrop-filter: blur(3px);
+  display: flex;
+}
+
+.changeThemeBlock{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  padding: 30px 46px 30px 80px;
+}
+
+.changeThemeInput {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  height: 100%;
+  max-height: 100px;
+}
+
+.changeThemeButton{
+  appearance: none;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  width: 210px;
+  color: #FFFFFF;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-height: 100px;
+}
+
+.changeThemeButton:disabled {
+  pointer-events: none;
+}
+
+.changeThemeButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.changeThemeButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

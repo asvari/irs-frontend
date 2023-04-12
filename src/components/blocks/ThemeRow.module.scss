@@ -1,0 +1,24 @@
+.tableRow {
+  display: flex;
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.tableRow:nth-of-type(odd) {
+  background: #EEEEEE;
+}
+
+.tableRow:hover{
+  background: rgba(155, 155, 155, 0.44);
+}
+
+.themeButton{
+  padding: 0!important;
+  font-size: 18px!important;
+  font-family: Muller, serif!important;
+  text-transform: none !important;
+  color: black!important;
+  z-index: 111;
+}

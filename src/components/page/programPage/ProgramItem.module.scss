@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 345px;
+  height: 250px;
+  background: #E0E7FF;
+  border-radius: 30px;
+  padding: 25px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container:hover{
+  width: 385px;
+  height: 280px;
+}
+
+.container:hover .arrow{
+  transform: rotateZ(180deg);
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.themeTitle{
+  font-family: 'Muller', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 94%;
+  letter-spacing: -0.035em;
+  color: #000000;
+  width: 239px;
+}
+
+.arrow{
+  transition: 0.3s;
+}
